@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: triag-service
+spec:
+  ports:
+  - port: 80
+    targetPort: triag-port
+    protocol: TCP
+  selector:
+    app: triagapp
+  type: LoadBalancer

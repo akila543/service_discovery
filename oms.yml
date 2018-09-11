@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: triagapp.example
+  labels:
+    app: triagapp
+spec:
+  containers:
+  - name: triag-core
+    image: akila543/samplenodeapp:el
+    ports:
+    - name: triag-port
+      containerPort: 1101
+   
+  
